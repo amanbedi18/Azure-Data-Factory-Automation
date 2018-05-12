@@ -1,0 +1,14 @@
+﻿{
+  "name": "{azure batch linked service name}",
+  "properties": {
+    "type": "AzureBatch",
+    "description": "",
+    "typeProperties": {
+      "accountName": "",
+      "accessKey": "",
+      "poolName": "",
+      "batchUri": "",
+      "linkedServiceName": ""
+    }
+  }
+}

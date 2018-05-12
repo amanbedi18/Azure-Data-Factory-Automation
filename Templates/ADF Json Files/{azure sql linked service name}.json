@@ -1,0 +1,11 @@
+﻿{
+  "name": "{azure sql linked service name}",
+  "properties": {
+    "description": "",
+    "hubName": "",
+    "type": "AzureSqlDatabase",
+    "typeProperties": {
+      "connectionString": ""
+    }
+  }
+}

@@ -1,0 +1,37 @@
+﻿{
+    "name": "{pipeline 1 name}",
+    "properties": {
+        "description": "{description}",
+        "activities": [
+            {
+                "type": "SqlServerStoredProcedure",
+                "typeProperties": {
+                    "storedProcedureName": "{sp name}"
+                },
+                "outputs": [
+                    {
+                        "name": "{output data set}"
+                    }
+                ],
+                "policy": {
+                    "timeout": "18:00:00",
+                    "concurrency": 1,
+                    "executionPriorityOrder": "NewestFirst",
+                    "retry": 3
+                },
+                "scheduler": {
+                    "frequency": "Day",
+                    "interval": 1,
+                    "offset": "15:00:00",
+                    "style": "StartOfInterval"
+                },
+                "name": "{sp name}"
+            }
+        ],
+        "start": "2017-09-01T00:00:00Z",
+        "end": "2099-12-01T00:00:00Z",
+        "isPaused": false,
+        "hubName": "{hub name}",
+        "pipelineMode": "Scheduled"
+    }
+}

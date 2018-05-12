@@ -1,0 +1,11 @@
+﻿{
+  "name": "{aml linked service name}",
+  "properties": {
+    "hubName": "",
+    "type": "AzureML",
+    "typeProperties": {
+      "mlEndpoint": "",
+      "apiKey": ""
+    }
+  }
+}

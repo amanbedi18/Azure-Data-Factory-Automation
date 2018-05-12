@@ -1,0 +1,25 @@
+﻿{
+  "name": "{data set 1 name}",
+  "properties": {
+    "published": false,
+    "type": "AzureBlob",
+    "linkedServiceName": "{ls name}",
+    "typeProperties": {
+      "folderPath": "adfstagingcopydata/Inbound/",
+      "format": {
+        "type": "TextFormat",
+        "rowDelimiter": "\n",
+        "columnDelimiter": "^",
+        "firstRowAsHeader": true
+      }
+    },
+    "availability": {
+      "frequency": "Day",
+      "interval": 1,
+      "offset": "15:00:00",
+      "style": "StartOfInterval"
+    },
+    "external": true,
+    "policy": {}
+  }
+}

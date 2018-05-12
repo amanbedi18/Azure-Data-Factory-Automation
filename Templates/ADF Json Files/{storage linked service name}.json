@@ -1,0 +1,11 @@
+﻿{
+  "name": "{storage linked service name}",
+  "properties": {
+    "description": "",
+    "hubName": "",
+    "type": "AzureStorage",
+    "typeProperties": {
+      "connectionString": ""
+    }
+  }
+}

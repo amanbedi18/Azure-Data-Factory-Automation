@@ -1,0 +1,54 @@
+﻿  {
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+    "parameters": {
+      "storageLinkedServiceFileName": {
+        "type": "string",
+        "value": "{storage linked service name}"
+      },
+      "azureSqlServiceLinkedFileName": {
+        "type": "string",
+        "value": "{azure sql linked service name}"
+      },
+      "azureBatchLinkedServiceFileName": {
+        "type": "string",
+        "value": "{azure batch linked service name}"
+      },
+      "azureMLLinkedServiceFileName": {
+        
+        "type": "string",
+        "value": [
+          "{aml linked service name}"
+        ]
+      },
+    
+      "datasets": {
+        "type": "array",
+        "value": [
+          "{data set 1 name}",
+          "{data set 2 name}",
+          "{data set 3 name}"
+        ]
+      },
+      "pipelines": {
+        "type": "array",
+        "value": [
+          "{pipeline 1 name}",
+          "{pipeline 2 name}",
+          "{pipeline 3 name}"
+        ]
+      },
+      "pipelineStartTime": {
+        "type": "string",
+        "value": "2017-09-21T00:00:00.000Z"
+      },
+      "pipelineEndTime": {
+        "type": "string",
+        "value": "2099-12-31T00:00:00.000Z"
+      },
+      "isFullDeployment": {
+        "type": "bool",
+        "value": true
+      }
+    }
+}
